@@ -1,18 +1,9 @@
-
-
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <header>
-    <div style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
-      <img src="IMG_4915.jpeg" alt="Bagossy Szilvia portré" style="width:180px; border-radius: 8px;">
-      <div style="text-align: left;">
-        <h1 style="margin: 0; color: #fff;">Bagossy Szilvia Rita</h1>
-        <p style="margin: 0;"><strong>Marketing specialista</strong></p>
-        <p style="font-style: italic; margin-top: 5px;">„Stratégiai gondolkodás, kreatív kampányok és precíz kivitelezés – ezekkel támogatom a márkák fejlődését.”</p>
-      </div>
-    </div>
-  </header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bagossy Szilvia Rita – Marketing specialista</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -26,7 +17,18 @@
       background-color: #004d66;
       color: #fff;
       padding: 2rem 1rem;
-      text-align: center;
+    }
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+    header img {
+      width: 180px;
+      border-radius: 8px;
     }
     main {
       max-width: 800px;
@@ -51,9 +53,14 @@
 </head>
 <body>
   <header>
-    <h1>Bagossy Szilvia Rita</h1>
-    <p><strong>Marketing specialista</strong></p>
-    <p><em>„Stratégiai gondolkodás, kreatív kampányok és precíz kivitelezés – ezekkel támogatom a márkák fejlődését.”</em></p>
+    <div class="container">
+      <img src="IMG_4915.jpeg" alt="Bagossy Szilvia portré">
+      <div>
+        <h1 style="margin: 0;">Bagossy Szilvia Rita</h1>
+        <p style="margin: 0;"><strong>Marketing specialista</strong></p>
+        <p style="font-style: italic; margin-top: 5px;">„Stratégiai gondolkodás, kreatív kampányok és precíz kivitelezés – ezekkel támogatom a márkák fejlődését.”</p>
+      </div>
+    </div>
   </header>
 
   <main>
