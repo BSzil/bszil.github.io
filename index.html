@@ -9,23 +9,24 @@
   <script src="https://kit.fontawesome.com/a2e0f1f0a5.js" crossorigin="anonymous"></script>
   <style>
     :root {
-      --primary: #ff4d6d;
-      --accent: #00d4ff;
-      --dark-bg: #1a1a1a;
-      --light: #f5f5f5;
+      --primary: #9b59b6;
+      --accent: #ff4d6d;
+      --bg: #ffffff;
+      --text: #1a1a1a;
     }
 
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
-      background-color: var(--dark-bg);
-      color: white;
+      background-color: var(--bg);
+      color: var(--text);
     }
 
     header {
       padding: 4rem 2rem;
       text-align: center;
       background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #fff;
     }
 
     header h1 {
@@ -64,7 +65,7 @@
       height: 180px;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     }
 
     .hero-text {
@@ -79,7 +80,7 @@
     }
 
     h2 {
-      color: var(--accent);
+      color: var(--primary);
       margin-bottom: 1rem;
     }
 
@@ -97,7 +98,7 @@
       margin-top: 1rem;
       padding: 0.8rem 1.5rem;
       background-color: var(--accent);
-      color: #000;
+      color: white;
       font-weight: bold;
       border-radius: 8px;
       text-decoration: none;
@@ -105,8 +106,8 @@
     }
 
     .btn:hover {
-      background-color: #fff;
-      color: var(--primary);
+      background-color: var(--primary);
+      color: white;
     }
 
     .social {
@@ -116,14 +117,21 @@
     .social a {
       margin-right: 1rem;
       font-size: 1.5rem;
-      color: var(--accent);
+      color: var(--primary);
     }
 
     footer {
       text-align: center;
       font-size: 0.9rem;
-      color: #888;
+      color: #666;
       padding: 2rem;
+    }
+
+    .contact-box {
+      background-color: #f0f0f0;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 3rem;
     }
 
     @media (max-width: 768px) {
@@ -144,8 +152,8 @@
   <section class="hero">
     <div class="hero-text">
       <h2>Rólam</h2>
-      <p>Több mint egy évtizede dolgozom marketing területen, olyan márkák mögött, mint a Rama, Violife, Knorr vagy Lipton. Számomra a marketing akkor igazán ütős, ha egyszerre kreatív, tudatos és üzletileg hatékony.</p>
-      <a href="bagossy_szilvia_bemutatkozas.pdf" class="btn" download>Letölthető PDF profil</a>
+      <p>Tapasztalt marketinges vagyok több mint egy évtizedes háttérrel az FMCG világában. Olyan márkákat segítettem építeni és pozicionálni, mint a Rama, Violife, Knorr vagy Lipton. Stratégiai látásmódomat ötvözöm a kreativitással, miközben az üzleti hatékonyság mindig szem előtt van.</p>
+      <p>2024 tavaszától egészségügyi szünetet tartottam, de most újra lendületben vagyok, és keresem azt a szakmai lehetőséget, ahol értéket teremthetek, inspirálhatok, és ahol a márkák növekedéséhez érdemben hozzájárulhatok.</p>
       <div class="social">
         <a href="https://www.linkedin.com/in/szilviabagossy" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
@@ -156,11 +164,14 @@
   <section class="section">
     <h2>Képességek</h2>
     <ul>
-      <li>Marketingkampányok tervezése és kivitelezése</li>
-      <li>Weboldal- és social tartalom menedzsment</li>
+      <li>Stratégiai marketingtervezés (B2C és B2B)</li>
+      <li>Digitális és offline kampányok lebonyolítása</li>
+      <li>Márkaépítés és márkakommunikáció</li>
+      <li>Weboldal- és tartalomkezelés, SEO alapok</li>
       <li>Trade marketing, rendezvényszervezés</li>
       <li>Termékbevezetés, csomagolásfejlesztés</li>
-      <li>Nemzetközi projektek, csapatmunka</li>
+      <li>Nemzetközi projektmenedzsment</li>
+      <li>Photoshop, Canva, SAP, DAM, Nielsen, MS Office</li>
     </ul>
   </section>
 
@@ -170,25 +181,29 @@
     <p><strong>Saint-Gobain Hungary</strong> – Marketing specialista (2019–2021)</p>
     <p><strong>Unilever</strong> – Artwork & marketingprojektek (2017–2019)</p>
     <p><strong>Sole-Mizo Zrt.</strong> – Brand és PR koordinátor (2013–2016)</p>
+    <p><strong>Nemzetközi tapasztalatok:</strong> Bécs, Koppenhága, Los Angeles, Finnország</p>
   </section>
 
   <section class="section">
     <h2>Tanulmányok</h2>
     <ul>
-      <li>Debreceni Egyetem – Kereskedelem és marketing (MA)</li>
-      <li>USC – Business English</li>
-      <li>Jyväskylä, CBS, Bécs – ösztöndíjprogramok</li>
+      <li>Debreceni Egyetem – Kereskedelem és marketing (mesterképzés)</li>
+      <li>University of Southern California – Business English (Los Angeles)</li>
+      <li>University of Jyväskylä, Finland – Üzleti ösztöndíj</li>
+      <li>Copenhagen Business School (CBS) – Nemzetközi marketing</li>
+      <li>University of Vienna – Diplomamunka, OTDK 3. helyezés</li>
     </ul>
   </section>
 
-  <section class="section">
+  <section class="section contact-box">
     <h2>Kapcsolat</h2>
     <p><strong>Email:</strong> <a href="mailto:szilvia.bagossy@gmail.com">szilvia.bagossy@gmail.com</a></p>
     <p><strong>Telefon:</strong> <a href="tel:+36309813599">+36 30 981 3599</a></p>
+    <a href="bagossy_szilvia_bemutatkozas.pdf" class="btn" download>Letölthető PDF profil</a>
   </section>
 
   <footer>
-    © 2025 Bagossy Szilvia Rita | Design by Strategy & Style
+    © 2025 Bagossy Szilvia Rita | Minden jog fenntartva
   </footer>
 
 </body>
