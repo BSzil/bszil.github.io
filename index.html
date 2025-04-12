@@ -6,161 +6,161 @@
   <title>Bagossy Szilvia Rita - Önéletrajz</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
+    :root {
+      --primary-color: #8E24AA;
+      --background-color: #fdfdfd;
+      --text-color: #222;
+      --highlight: #fce4ec;
+    }
+
     body {
-      font-family: 'Montserrat', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #fdfdfd;
-      color: #1a1a1a;
+      font-family: 'Montserrat', sans-serif;
+      background: var(--background-color);
+      color: var(--text-color);
       line-height: 1.6;
     }
+
     header {
-      background: linear-gradient(135deg, #8e24aa, #f06292);
+      background: var(--primary-color);
       color: white;
-      padding: 3rem 1rem;
+      padding: 2rem;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
+
     header h1 {
       margin: 0;
       font-size: 2.5rem;
     }
+
     header p {
-      margin-top: 0.5rem;
+      margin: 0.5rem 0;
       font-size: 1.2rem;
-      font-style: italic;
     }
+
     .section {
+      padding: 3rem 1.5rem;
       max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem 2rem;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      animation: fadeInUp 0.8s ease forwards;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      font-size: 1.8rem;
+      margin-top: 2rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .contact-info {
+      background: var(--highlight);
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+
+    .contact-info a {
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .skills-grid li {
+      margin-bottom: 0.5rem;
+    }
+
+    .social-icons {
+      margin-top: 1rem;
+    }
+
+    .social-icons a {
+      margin-right: 10px;
+      color: var(--primary-color);
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    .fade-in {
       opacity: 0;
       transform: translateY(30px);
+      animation: fadeIn 1s forwards;
     }
-    @keyframes fadeInUp {
+
+    @keyframes fadeIn {
       to {
         opacity: 1;
         transform: none;
       }
     }
-    h2 {
-      color: #8e24aa;
-      border-bottom: 2px solid #f06292;
-      padding-bottom: 0.3rem;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
-    }
-    .contact a {
-      color: #8e24aa;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.8rem 1.5rem;
-      background-color: #f06292;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      color: #999;
-      padding: 2rem;
-      font-size: 0.9rem;
-    }
   </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".fade-in").forEach((el, i) => {
+        el.style.animationDelay = `${i * 0.2}s`;
+      });
+    });
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
 
 <header>
   <h1>Bagossy Szilvia Rita</h1>
-  <p>Marketing szakember | B2B & B2C | Stratégia, kreativitás, kivitelezés</p>
+  <p>Marketing szakember | B2B & B2C | Márkaépítés, kampányok, rendezvények</p>
 </header>
 
-<section class="section contact">
-  <h2>Elérhetőség</h2>
-  <p><strong>Cím:</strong> 1068 Budapest, Szófia utca 21. II/19.</p>
-  <p><strong>Telefon:</strong> <a href="tel:+36309813599">(+36) 30 981 3599</a></p>
-  <p><strong>Email:</strong> <a href="mailto:szilvia.bagossy@gmail.com">szilvia.bagossy@gmail.com</a></p>
-  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/szilviabagossy" target="_blank">linkedin.com/in/szilviabagossy</a></p>
-  <a class="button" href="bagossy_szilvia_cv.pdf" download>Letölthető PDF CV</a>
+<section class="section contact-info fade-in">
+  <p><strong>Elérhetőség:</strong></p>
+  <p>1068 Budapest, Szófia utca 21. II/19.</p>
+  <p>Telefon: <a href="tel:+36309813599">(+36) 30 981 3599</a></p>
+  <p>Email: <a href="mailto:szilvia.bagossy@gmail.com">szilvia.bagossy@gmail.com</a></p>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/szilviabagossy" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
 </section>
 
-<section class="section">
+<section class="section fade-in">
   <h2>Szakmai összefoglaló</h2>
   <p>Tapasztalt marketing szakember több mint 10 év hazai és nemzetközi tapasztalattal az FMCG és B2B szektorban. Erősségeim közé tartozik a márkaépítés, csomagolásfejlesztés, kampánymenedzsment és rendezvényszervezés. Olyan cégeknél dolgoztam, mint az Unilever, Upfield és Saint-Gobain. Gyakorlatias, kreatív és rendszerszemléletű gondolkodásmódomat kiváló kommunikációs készségekkel egészítem ki.</p>
 </section>
 
-<section class="section">
+<section class="section fade-in">
   <h2>Szakmai tapasztalat</h2>
   <ul>
-    <li><strong>2022 – 2024 | Upfield Hungary Kft.</strong> – Marketing Specialista – Rama, Flora, Violife
-      <ul>
-        <li>Violife hazai bevezetése, weboldal, content marketing, kampányok</li>
-        <li>Digitális stratégia, sales promóciók, költségvetés, csomagolásfejlesztés</li>
-      </ul>
-    </li>
-    <li><strong>2020 – 2022 | Saint-Gobain Hungary Kft.</strong> – Marketing Asszisztens / Specialista – Weber
-      <ul>
-        <li>Online/Offline kampányok, web, trade marketing, rendezvények</li>
-      </ul>
-    </li>
-    <li><strong>2018 – 2019 | Modul Kft.</strong> – Projektmenedzser tanácsadó (építkezés, home staging)</li>
-    <li><strong>2015 – 2018 | Unilever Magyarország Kft.</strong> – Marketing & Artwork Production Specialist
-      <ul>
-        <li>Knorr, Algida, Lipton, Rama – termékfejlesztés, artwork, trade</li>
-      </ul>
-    </li>
-    <li><strong>2014 – 2015 | Sole-Mizo Zrt., Bonafarm</strong> – Marketing és kereskedelmi koordinátor</li>
-    <li><strong>2011 – 2012 | Mulackal GmbH, Bécs</strong> – Nemzetközi kapcsolattartó, export-import admin</li>
-    <li><strong>2024 – 2025</strong> – Egészségügyi szünet – önfejlesztés, trendfigyelés, AI, nyelvi fejlődés</li>
+    <li><strong>2022 – 2024 | Upfield Hungary Kft.</strong> – Marketing Specialista (Rama, Flora, Violife)</li>
+    <li><strong>2020 – 2022 | Saint-Gobain Hungary</strong> – Marketing Asszisztens / Specialista</li>
+    <li><strong>2018 – 2019 | Modul Kft.</strong> – Projektmenedzser tanácsadó</li>
+    <li><strong>2015 – 2018 | Unilever Magyarország</strong> – Marketing & Artwork Production Specialist</li>
+    <li><strong>2014 – 2015 | Sole-Mizo Zrt.</strong> – Marketing és kereskedelmi koordinátor</li>
+    <li><strong>2011 – 2012 | Mulackal GmbH, Bécs</strong> – Marketing és nemzetközi kapcsolattartó</li>
+    <li><strong>2024 – 2025</strong> – Egészségügyi szünet (önfejlesztés, digitális eszközök, nyelvfejlesztés)</li>
   </ul>
 </section>
 
-<section class="section">
+<section class="section fade-in">
   <h2>Tanulmányok</h2>
   <ul>
     <li>Debreceni Egyetem – Kereskedelem és marketing (MSc)</li>
     <li>University of Southern California – Business English</li>
-    <li>Copenhagen Business School, Jyväskylä, Bécs – ösztöndíjprogramok</li>
-  </ul>
-</section>
-
-<section class="section">
-  <h2>Képességek és ismeretek</h2>
-  <ul>
-    <li><strong>Nyelvek:</strong> magyar (anyanyelvi), angol (tárgyalási szint)</li>
-    <li><strong>Szoftverek:</strong> MS Office, Photoshop, Canva, SAP, DAM, Nielsen</li>
-    <li><strong>Digitális:</strong> Trello, Asana, ChatGPT, AI-tartalomgenerálás</li>
-    <li><strong>Soft skillek:</strong> kreativitás, rendszerszemlélet, precizitás, proaktivitás, rugalmasság</li>
-  </ul>
-</section>
-
-<section class="section">
-  <h2>Önkéntesség</h2>
-  <ul>
-    <li>NEK VIP protokoll (2021)</li>
-    <li>Magyar Ökomenikus Segély – koordináció, rendezvényszervezés</li>
-    <li>Állatmenhelyi önkéntesség – Szent Ferenc Alapítvány, Ózd</li>
-  </ul>
-</section>
-
-<section class="section">
-  <h2>Érdeklődési kör</h2>
-  <p>Fitnesz, sitting workout, mesterséges intelligencia, ChatGPT és digitális eszközök használata a mindennapi hatékonyságban.</p>
-</section>
-
-<footer>
-  © 2025 Bagossy Szilvia Rita | Minden jog fenntartva
-</footer>
-
-</body>
-</html>
+    <li>Copenhagen Business School, University of Jyvä
