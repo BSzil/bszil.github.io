@@ -1,103 +1,110 @@
-/* Alapbeállítások */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #fdfdfd;
-  color: #333;
-  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  background-color: #fff8f3;
+  color: #1c1c1c;
 }
 
-/* Fejléc */
-header {
-  text-align: center;
-  background: linear-gradient(135deg, #f25a70, #bd3f9c);
-  color: white;
-  padding: 2rem 1rem;
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 2rem;
+  background: none;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-header .subtitle {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-}
-
-header img {
-  border-radius: 10px;
-  margin: 1rem 0;
-  max-width: 300px;
-  height: auto;
-}
-
-/* Navigáció */
-nav ul {
+.nav ul {
   list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
   padding: 0;
-  margin: 2rem 0 0 0;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #1c1c1c;
+  font-size: 0.95rem;
+}
+
+.linkedin-icon {
+  width: 20px;
+  height: 20px;
+  filter: invert(24%) sepia(98%) saturate(6500%) hue-rotate(352deg) brightness(95%) contrast(110%);
+}
+
+.hero {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
-nav ul li {
-  background: white;
-  border-radius: 2rem;
-  padding: 0.5rem 1.5rem;
+.text {
+  flex: 1 1 500px;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #7b1fa2;
+.text h1 {
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+.highlight {
+  color: #d72638;
+  font-weight: 700;
+}
+
+.text h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0.5rem 0 1rem;
+  text-transform: uppercase;
+  color: #1c1c1c;
+}
+
+.slogan {
+  font-size: 1.4rem;
   font-weight: bold;
+  margin-bottom: 2rem;
 }
 
-/* Szekciók */
-main {
-  padding: 2rem 1rem;
-  max-width: 900px;
-  margin: 0 auto;
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
 }
 
-section {
-  margin-bottom: 3rem;
+.play-icon {
+  font-size: 2rem;
+  color: #d72638;
 }
 
-section h2 {
-  color: #7b1fa2;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-ul {
-  padding-left: 1.2rem;
-}
-
-ul li {
-  margin-bottom: 1rem;
-}
-
-/* Kapcsolat link */
-#contact a {
-  color: #f25a70;
-  font-weight: bold;
+.cta {
+  background-color: #d72638;
+  color: white;
   text-decoration: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
 }
 
-#contact a:hover {
-  text-decoration: underline;
+.cta:hover {
+  background-color: #a6182c;
 }
 
-/* Lábléc */
-footer {
+.image {
+  flex: 1 1 400px;
   text-align: center;
-  background-color: #f0f0f0;
-  color: #777;
-  padding: 1rem;
-  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+.image img {
+  max-width: 100%;
+  border-radius: 10px;
 }
